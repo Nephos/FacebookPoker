@@ -9,3 +9,9 @@ bundle install
 nephos-server
 curl "http://localhost:8080/pokes/return/60" # to return all poke for 60 seconds
 ```
+
+# TODO
+
+- international version
+- /pokes/return/:time in background job
+- status

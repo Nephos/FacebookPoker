@@ -40,8 +40,10 @@ class PokeController < Nephos::Controller
     @@b ||= new_bot
     # spawn new job
     params["time"].to_i.times do
-      n = @@b.poke
-      puts "pokeed #{n} times"
+      e = @@b.poke
+      n = e[:nb]
+      names = e[:names].join(', ')
+      puts "pokeed #{n} times #{names}" if n > 0
       sleep 1
     end
     return {content: "terminated"}

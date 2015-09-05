@@ -1,5 +1,7 @@
 # Installation
 
+based on [nephos-server](https://github.com/pouleta/NephosRubyServer)
+
 ```bash
 # set your env
 # FACEBOOK_USERNAME
